@@ -1,7 +1,7 @@
 jsonObj = {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 30,
       "density": {
         "enable": true,
         "value_area": 800
@@ -36,7 +36,7 @@ jsonObj = {
       }
     },
     "size": {
-      "value": 10,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": false,
@@ -54,9 +54,9 @@ jsonObj = {
     },
     "move": {
       "enable": true,
-      "speed": 12,
+      "speed": 2,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -75,7 +75,7 @@ jsonObj = {
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
