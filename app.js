@@ -109,6 +109,10 @@ jsonObj = {
   "retina_detect": true
 }
 
+particlesJS('particles-js', jsonObj);
+
+/*
 particlesJS.load('particles-js', jsonObj, function() {
 	console.log('callback - particles.js config loaded');
 });
+*/
