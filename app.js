@@ -110,7 +110,6 @@ particlesJS.load('particles-js',
   },
   "retina_detect": true
 }
-
 , function() {
 	console.log('callback - particles.js config loaded');
 });
