@@ -1,6 +1,4 @@
-
-particlesJS.load('particles-js', 
-{
+jsonObj = {
   "particles": {
     "number": {
       "value": 80,
@@ -110,6 +108,7 @@ particlesJS.load('particles-js',
   },
   "retina_detect": true
 }
-, function() {
+
+particlesJS.load('particles-js', jsonObj, function() {
 	console.log('callback - particles.js config loaded');
 });
