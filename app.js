@@ -26,12 +26,12 @@ jsonObj = {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.2,
       "random": false,
       "anim": {
         "enable": false,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0.01,
         "sync": false
       }
     },
@@ -49,12 +49,12 @@ jsonObj = {
       "enable": true,
       "distance": 300,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.3,
       "width": 2
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 0.5,
       "direction": "none",
       "random": true,
       "straight": false,
