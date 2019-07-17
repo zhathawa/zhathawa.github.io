@@ -1,9 +1,9 @@
 jsonObj = {
   "particles": {
     "number": {
-      "value": 30,
+      "value": 40,
       "density": {
-        "enable": true,
+        "enable": false,
         "value_area": 800
       }
     },

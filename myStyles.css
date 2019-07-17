@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.micon {
+  color: white;
+}
+
+.micon:hover {
+  opacity: 0.5;
+}

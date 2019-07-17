@@ -1,166 +1,182 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content"width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="main.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content"width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="myStyles.css">
 
-		<style>
-			html {
-				scroll-behavior: smooth;
-			}
+	<script src="main.js"></script>
 
-			.micon {
-				color: white;
-			}
+	<title>Curious</title>
+</head>
+<body class="text-white" style="background:black;">
 
-			.micon:hover {
-				opacity: 0.5;
-			}
+	<!-- NAVIGATION -->
+	<div class="container sticky-top border-bottom" style="background: black;">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">zh</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		</style>
-			</head>
-	<body class="text-white" style="background:black;">
-		
-		<div class="container sticky-top border-bottom" style="background: black;">
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<a class="navbar-brand" href="#">zh</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" id="home_link" href="#">home<span class="sr-only">(Current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="research_link" href="#research">research</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="experience_link" href="#experience">experience</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="education_link" href="#education">education</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="contact_link" href="#contact">contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-
-		<div class="container-fluid">
-			<div class="container-fluid position-absolute" style="margin-top:10%;">
-				<div class="container my-5">
-					<div class="row">
-					<h1 style="text-align:center" class="m-auto">zach hathaway</h1>
-					</div>
-					<div class="row text-center mt-5">
-					<!--<div style="position:relative;width:25%;margin:auto;">-->
-						<div class="col">
-								<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
-						</div>
-						<div class="col">
-								<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
-						</div>
-						<div class="col">
-							<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
-						</div>
-					<!--</div>-->
-					</div>
-				</div>
-
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" id="home_link" href="#">home<span class="sr-only">(Current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="research_link" href="#research">research</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="experience_link" href="#experience">experience</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="education_link" href="#education">education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact_link" href="#contact">contact</a>
+					</li>
+				</ul>
 			</div>
+		</nav>
+	</div>
 
-			<div id="particles-js"></div>
-		</div>
-
-		<div class="container mb-5">
-			<div id="research" class="pt-5">
-				<h1>research</h1>
-				<div class="item mb-3">
-					<h3>opioids and domestic violence</h3>
-					<h5>case western reserve university</h5>
-					<div class="dates">
-						Jan 2019 - Present
-					</div>
-					<div class="description">
-						Analyze correlation between opioid overdoses and gun violence in Cuyahoga County.
-					</div>
+	<!-- Main landing -->
+	<div style="position:relative;height:100%;width:100%;">
+		<div style="position:absolute;width:100%;top:50%;transform:translateY(-50%);">
+			<div class="container">
+				<div class="row">
+					<h1 style="text-align:center;" class="m-auto">zach hathaway</h1>
 				</div>
-				<div class="item mb-3">
-					<h3>interpenetrating hydrogel networks</h3>
-					<h5>miami university</h5>
-					<div class="dates">
-						Jan 2014 - May 2015
+				<div class="row text-center mt-5">
+					<div class="col">
+						<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
 					</div>
-					<div class="description">
-						Led project to develop 3D extrusion printer for polymers with biomimetic properties.
+					<div class="col">
+						<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
+					</div>
+					<div class="col">
+						<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container mb-5">
-			<div id="experience" class="pt-5">
-				<h1>experience</h1>
-				<div class="item mb-3">
-					<h3>graduate teaching assistant</h3>
-					<h5>case western reserve university</h5>
-					<div class="dates">
-						Jan 2019 - Present
-					</div>
-					<div class="description">
-						Collaborate with professors from deparments across engineering school to innovate a new curriculum.
-					</div>
-				</div>
+		<div id="particles-js"></div>
+	</div>
 
-				<div class="item mb-3">
-					<h3>technical services engineer</h3>
-					<h5>epic systems</h5>
-					<div class="dates">
-						Jan 2016 - Sept 2017
+<!-- <div class="container-fluid">
+	<div class="position-absolute" style="margin:auto;left:50%;top:50%">
+		<div class="container">
+			<div class="row">
+				<h1 style="text-align:center" class="m-auto">zach hathaway</h1>
+			</div>
+			<div class="row text-center mt-5 mx-auto">
+				<div style="position:relative;width:25%;margin:auto;"> OLD COMMENT
+					<div class="col">
+						<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
 					</div>
-					<div class="description">
-						Debug electronic medical record (EMR) software for the Cleveland Clinic Foundation and HonorHealth.
+					<div class="col">
+						<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
 					</div>
+					<div class="col">
+						<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
+					</div>
+				</div> OLD COMMENT
+			</div>
+		</div>
+	</div>
+
+	<div id="particles-js"></div>
+</div> -->
+
+<div class="timeline mt-5">
+	<div class="container mb-5 timeline_module">
+		<div id="research" class="pt-5">
+			<h1>research</h1>
+			<div class="item mb-3">
+				<h3>opioids and domestic violence</h3>
+				<h5>case western reserve university</h5>
+				<div class="dates">
+					Jan 2019 - Present
+				</div>
+				<div class="description">
+					Analyze correlation between opioid overdoses and gun violence in Cuyahoga County.
+				</div>
+			</div>
+			<div class="item mb-3">
+				<h3>interpenetrating hydrogel networks</h3>
+				<h5>miami university</h5>
+				<div class="dates">
+					Jan 2014 - May 2015
+				</div>
+				<div class="description">
+					Led project to develop 3D extrusion printer for polymers with biomimetic properties.
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="container mb-5">
-			<div id="education" class="pt-5">
-				<h1>education</h1>
-				<div class="item mb-3">
-					<h3>case western reserve university</h3>
-					<h5>cleveland</h5>
+	<div class="container mb-5 timeline_module">
+		<div id="experience" class="pt-5">
+			<h1>experience</h1>
+			<div class="item mb-3">
+				<h3>graduate teaching assistant</h3>
+				<h5>case western reserve university</h5>
+				<div class="dates">
+					Jan 2019 - Present
 				</div>
-					
-				<div class="item mb-3">
-					<h3>university of wisconsin - madison</h3>
+				<div class="description">
+					Collaborate with professors from deparments across engineering school to innovate a new curriculum.
 				</div>
+			</div>
 
-				<div class="item mb-3">
-					<h3>miami university</h3>
+			<div class="item mb-3">
+				<h3>technical services engineer</h3>
+				<h5>epic systems</h5>
+				<div class="dates">
+					Jan 2016 - Sept 2017
+				</div>
+				<div class="description">
+					Debug electronic medical record (EMR) software for the Cleveland Clinic Foundation and HonorHealth.
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="container mb-5">
-			<div id="contact" class="pt-5">
-				<h1>contact</h1>
+	<div class="container mb-5 timeline_module">
+		<div id="education" class="pt-5">
+			<h1>education</h1>
+			<div class="item mb-3">
+				<h3>case western reserve university</h3>
+				<h5>cleveland</h5>
+			</div>
+
+			<div class="item mb-3">
+				<h3>university of wisconsin - madison</h3>
+			</div>
+
+			<div class="item mb-3">
+				<h3>miami university</h3>
 			</div>
 		</div>
+	</div>
 
-		<script src="particles.js"></script>
-		<script src="app.js"></script>
-		<script src="https://kit.fontawesome.com/01c5fee106.js"></script>	
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+	<div class="container mb-5 timeline_module">
+		<div id="contact" class="pt-5">
+			<h1>contact</h1>
+		</div>
+	</div>
+
+</div>
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/01c5fee106.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
