@@ -98,7 +98,7 @@ var pJS = function(tag_id, params){
           enable: true,
           mode: 'push'
         },
-        resize: true
+        resize: false
       },
       modes: {
         grab:{

@@ -1,0 +1,179 @@
+/* Credit to W3 for the template
+**
+** Modified to fit my needs
+**    -zh
+*/
+
+/* variables */
+:root {
+  --timeline-color: white;
+  --timeline-accent: #3d72a4;
+}
+
+/* Global timeline styling */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+}
+
+.timeline::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  z-index: 1;
+  margin: 0 auto 0 -4px;
+
+  /* Add a teeny tiny arrow to the top */
+  border: medium solid var(--timeline-accent);
+  border-width: 0px 4px 4px 4px;
+  border-color: transparent transparent var(--timeline-accent) transparent;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--timeline-accent);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+
+}
+
+/* individual components */
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  color: white;
+  opacity: 0;
+}
+
+.timelineItem::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: var(--timeline-accent);
+  border: 4px solid #d7ecf4;
+  top: 45px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.lineContent {
+  padding: 20px 30px;
+  background-color: rgba(0,0,0, 0);
+  position: relative;
+  border-radius: 6px;
+}
+
+.lineDates {right
+  font-style: italic;
+}
+
+.lineImage {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid blue;
+}
+
+/* Positioning */
+.left {
+  left: 0%;
+  text-align: right;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--timeline-accent);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--timeline-accent);
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--timeline-accent);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--timeline-accent) transparent transparent;
+}
+
+.right::after {
+  left: -12px;
+};
+
+/* Starting opacity for the header */
+.custom-heading {
+  opacity: 0;
+}
+
+/* YAY Animations! */
+.fadeIn {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .timeline::before {
+    left: 31px;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timelineItem::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--timeline-accent) transparent transparent;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .left::after, .right::after {
+    left: 18px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}

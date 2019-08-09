@@ -1,0 +1,81 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.micon, #timeLink{
+  color: white;
+  margin: 0 5px;
+}
+
+.micon:hover, #timeLink:hover {
+  opacity: 0.5;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+#particles-js {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#000000;
+  background-size: cover
+}
+
+.custom-heading {
+  width: 75%;
+  font-size: 5em;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.blur {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+  opacity: .5;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  filter: blur(20px);timeLink
+}
+
+.lineDates {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.projects {
+  
+}
+
+@media screen and (min-width: 736px)
+{
+  .micon {
+    margin: 0 15px;
+  }
+}

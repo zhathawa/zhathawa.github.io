@@ -5,16 +5,29 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content"width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="myStyles.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="timeline.css">
 
-	<script src="main.js"></script>
-
+	<script src="linkColoring.js"></script>
 	<title>Curious</title>
 </head>
 <body class="text-white" style="background:black;">
+	<div id="particles-js" style="position: fixed;"></div>
 
 	<!-- NAVIGATION -->
-	<div class="container sticky-top border-bottom" style="background: black;">
+	<div id="blur_svg" style="width: 100%; height: 70px; top: 0; position: sticky; z-index: 5;">
+		<svg id="blur_element" width="100%" height="70px">
+		  <defs>
+				<filter id="blur">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+				</filter>
+			</defs>
+
+			<rect width="100%" height="100%" filter="url(#blur)" fill="rgba(0, 0, 0, 1)"/>
+		</svg>
+	</div>
+
+	<div class="container sticky-top" id="navbar">
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="#">zh</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,16 +40,10 @@
 						<a class="nav-link" id="home_link" href="#">home<span class="sr-only">(Current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="research_link" href="#research">research</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" id="experience_link" href="#experience">experience</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="education_link" href="#education">education</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="contact_link" href="#contact">contact</a>
+						<a class="nav-link" id="projects_link" href="#projects">projects</a>
 					</li>
 				</ul>
 			</div>
@@ -44,139 +51,125 @@
 	</div>
 
 	<!-- Main landing -->
-	<div style="position:relative;height:100%;width:100%;">
-		<div style="position:absolute;width:100%;top:50%;transform:translateY(-50%);">
-			<div class="container">
-				<div class="row">
-					<h1 style="text-align:center;" class="m-auto">zach hathaway</h1>
-				</div>
-				<div class="row text-center mt-5">
-					<div class="col">
-						<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
-					</div>
-					<div class="col">
-						<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
-					</div>
-					<div class="col">
-						<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="particles-js"></div>
-	</div>
-
-<!-- <div class="container-fluid">
-	<div class="position-absolute" style="margin:auto;left:50%;top:50%">
+	<div class="container vertical-center">
 		<div class="container">
 			<div class="row">
-				<h1 style="text-align:center" class="m-auto">zach hathaway</h1>
+				<h1 style="text-align:center;" class="m-auto">zach hathaway</h1>
 			</div>
-			<div class="row text-center mt-5 mx-auto">
-				<div style="position:relative;width:25%;margin:auto;"> OLD COMMENT
-					<div class="col">
-						<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
-					</div>
-					<div class="col">
-						<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
-					</div>
-					<div class="col">
-						<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
-					</div>
-				</div> OLD COMMENT
-			</div>
-		</div>
-	</div>
-
-	<div id="particles-js"></div>
-</div> -->
-
-<div class="timeline mt-5">
-	<div class="container mb-5 timeline_module">
-		<div id="research" class="pt-5">
-			<h1>research</h1>
-			<div class="item mb-3">
-				<h3>opioids and domestic violence</h3>
-				<h5>case western reserve university</h5>
-				<div class="dates">
-					Jan 2019 - Present
-				</div>
-				<div class="description">
-					Analyze correlation between opioid overdoses and gun violence in Cuyahoga County.
+			<div class="row text-center mt-5">
+				<div class="col">
+					<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
+					<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
+					<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
 				</div>
 			</div>
-			<div class="item mb-3">
-				<h3>interpenetrating hydrogel networks</h3>
-				<h5>miami university</h5>
-				<div class="dates">
-					Jan 2014 - May 2015
-				</div>
-				<div class="description">
-					Led project to develop 3D extrusion printer for polymers with biomimetic properties.
+			<div class="row text-center mt-5">
+				<div class="col">
+					<a id="timeLink" href="#experience"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container mb-5 timeline_module">
-		<div id="experience" class="pt-5">
-			<h1>experience</h1>
-			<div class="item mb-3">
-				<h3>graduate teaching assistant</h3>
-				<h5>case western reserve university</h5>
-				<div class="dates">
-					Jan 2019 - Present
+	<!-- Timeline -->
+	<div class="custom-heading" id="experience">
+		experience
+	</div>
+	<div id="timeline" class="timeline">
+		<div class="timelineItem">
+			<div class="lineContent" id="research">
+				<h2>cwru</h2>
+				<div class="lineDates">
+					Aug 2018 - Present
 				</div>
-				<div class="description">
-					Collaborate with professors from deparments across engineering school to innovate a new curriculum.
+				<div class="lineDescr">
+					MS student in ML analyzing correlation between opioid overdoses and domestic violence in Cuyahoga County.
 				</div>
 			</div>
+		</div>
 
-			<div class="item mb-3">
-				<h3>technical services engineer</h3>
-				<h5>epic systems</h5>
-				<div class="dates">
+		<div class="timelineItem">
+			<div class="lineContent" id="TA">
+				<h2>cwru</h2>
+				<div class="lineDates">
+					Jan 2019 - Present
+				</div>
+				<div class="lineDescr">
+					<p>Develop new Intro. to Engineering course and teach Matlab programming via hands-on labs.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="timelineItem">
+			<div class="lineContent" id="back2school">
+				<div class="lineDates">
+					Sept 2017 - Aug 2018
+				</div>
+				<div class="lineDescr">
+					<p>Decided to go back to school!</p>
+					<p>GRE prep and test.</p>
+					<p>MOOCs, personal projects, and travel.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="timelineItem">
+			<div class="lineContent" id="UW">
+				<h2>uw-madison</h2>
+				<div class="lineDates">
+					Jan 2017 - Sept 2017
+				</div>
+				<div class="lineDescr">
+					Attended CS classes at UW-Madison.
+				</div>
+			</div>
+		</div>
+
+		<div class="timelineItem">
+			<div class="lineContent" id="epic">
+				<h2>epic</h2>
+				<div class="lineDates">
 					Jan 2016 - Sept 2017
 				</div>
-				<div class="description">
-					Debug electronic medical record (EMR) software for the Cleveland Clinic Foundation and HonorHealth.
+				<div class="lineDescr">
+					<p>Provided technical support to Cleveland Clinic and HonorHealth.</p>
+					<p>Debugged code and worked closely with developers to improve.</p>
+					<p>Developed reports on both system and human health.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="timelineItem">
+			<div class="lineContent" id="cwru">
+				<h2>miami</h2>
+				<div class="lineDates">
+					Aug 2011 - May 2015
+				</div>
+				<div class="lineDescr">
+					Bioengineering student studying 3D printed polymer properties.
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container mb-5 timeline_module">
-		<div id="education" class="pt-5">
-			<h1>education</h1>
-			<div class="item mb-3">
-				<h3>case western reserve university</h3>
-				<h5>cleveland</h5>
-			</div>
-
-			<div class="item mb-3">
-				<h3>university of wisconsin - madison</h3>
-			</div>
-
-			<div class="item mb-3">
-				<h3>miami university</h3>
-			</div>
-		</div>
+	<div class="container" id="projects" style="margin-top: 100px; text-align: center;">
+		<h1> Projects coming soon... </h1>
 	</div>
 
-	<div class="container mb-5 timeline_module">
-		<div id="contact" class="pt-5">
-			<h1>contact</h1>
-		</div>
+	<!-- Spacer -->
+	<div class="spacer" style="margin: 100px 0">
+
 	</div>
 
-</div>
 
-<script src="particles.js"></script>
-<script src="app.js"></script>
-<script src="https://kit.fontawesome.com/01c5fee106.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="particles.js"></script>
+	<script src="app.js"></script>
+	<script src="timeline.js"></script>
+
+	<script src="https://kit.fontawesome.com/01c5fee106.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
