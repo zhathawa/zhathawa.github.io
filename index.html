@@ -2,174 +2,227 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content"width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="timeline.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content
+    "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timeline.css">
 
-	<script src="linkColoring.js"></script>
-	<title>Curious</title>
+    <script src="linkColoring.js"></script>
+    <title>Curious</title>
 </head>
 <body class="text-white" style="background:black;">
-	<div id="particles-js" style="position: fixed;"></div>
+<div id="particles-js" style="position: fixed;"></div>
 
-	<!-- NAVIGATION -->
-	<div id="blur_svg" style="width: 100%; height: 70px; top: 0; position: sticky; z-index: 5;">
-		<svg id="blur_element" width="100%" height="70px">
-		  <defs>
-				<filter id="blur">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="3" />
-				</filter>
-			</defs>
+<!-- NAVIGATION -->
+<div id="blur_svg" style="width: 100%; height: 70px; top: 0; position: sticky; z-index: 5;">
+    <svg id="blur_element" width="100%" height="70px">
+        <defs>
+            <filter id="blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+            </filter>
+        </defs>
 
-			<rect width="100%" height="100%" filter="url(#blur)" fill="rgba(0, 0, 0, 1)"/>
-		</svg>
-	</div>
+        <rect width="100%" height="100%" filter="url(#blur)" fill="rgba(0, 0, 0, 1)"/>
+    </svg>
+</div>
 
-	<div class="container sticky-top" id="navbar">
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="#">zh</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+<div class="container sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">zh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" id="home_link" href="#">home<span class="sr-only">(Current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="experience_link" href="#experience">experience</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="projects_link" href="#projects">projects</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="home_link" href="#">home<span class="sr-only">(Current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="experience_link" href="#experience">experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="projects_link" href="#projects">projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
-	<!-- Main landing -->
-	<div class="container vertical-center">
-		<div class="container">
-			<div class="row">
-				<h1 style="text-align:center;" class="m-auto">zach hathaway</h1>
-			</div>
-			<div class="row text-center mt-5">
-				<div class="col">
-					<a href="https://github.com/zhathawa/portfolio" target="_blank"><i class="fab fa-github fa-3x micon"></i></a>
-					<a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i class="fab fa-linkedin fa-3x micon"></i></a>
-					<a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
-				</div>
-			</div>
-			<div class="row text-center mt-5">
-				<div class="col">
-					<a id="timeLink" href="#experience"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Main landing -->
+<div class="container vertical-center">
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align:center;" class="m-auto">zach hathaway</h1>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col">
+				<a id="git" href="https://github.com/zhathawa/portfolio" target="_blank"><i
+						class="fab fa-github fa-3x micon"></i></a>
+                <a href="https://www.linkedin.com/in/zachshathaway/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x micon"></i></a>
+                <a href="mailto:zsh2@case.edu"><i class="far fa-paper-plane fa-3x micon"></i></a>
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col">
+                <a id="timeLink" href="#experience"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<!-- Timeline -->
-	<div class="custom-heading" id="experience">
-		experience
-	</div>
-	<div id="timeline" class="timeline">
-		<div class="timelineItem">
-			<div class="lineContent" id="research">
-				<h2>cwru</h2>
-				<div class="lineDates">
-					Aug 2018 - Present
-				</div>
-				<div class="lineDescr">
-					MS student in ML analyzing correlation between opioid overdoses and domestic violence in Cuyahoga County.
-				</div>
-			</div>
-		</div>
+<!-- Timeline -->
+<div class="custom-heading" id="experience">
+    experience
+</div>
+<div id="timeline" class="timeline">
+    <div class="timelineItem">
+        <div class="lineContent" id="research">
+            <h2>cwru</h2>
+            <div class="lineDates">
+                Aug 2018 - Present
+            </div>
+            <div class="lineDescr">
+                MS student in ML developing new stats tool focused on usability for the statistical layman.
+            </div>
+        </div>
+    </div>
 
-		<div class="timelineItem">
-			<div class="lineContent" id="TA">
-				<h2>cwru</h2>
-				<div class="lineDates">
-					Jan 2019 - Present
-				</div>
-				<div class="lineDescr">
-					<p>Develop new Intro. to Engineering course and teach Matlab programming via hands-on labs.
-					</p>
-				</div>
-			</div>
-		</div>
+    <div class="timelineItem">
+        <div class="lineContent" id="TA">
+            <h2>cwru</h2>
+            <div class="lineDates">
+                Jan 2019 - Present
+            </div>
+            <div class="lineDescr">
+                <p>Develop new Intro. to Engineering course and teach Matlab programming via hands-on labs.
+                </p>
+            </div>
+        </div>
+    </div>
 
-		<div class="timelineItem">
-			<div class="lineContent" id="back2school">
-				<div class="lineDates">
-					Sept 2017 - Aug 2018
-				</div>
-				<div class="lineDescr">
-					<p>Decided to go back to school!</p>
-					<p>GRE prep and test.</p>
-					<p>MOOCs, personal projects, and travel.</p>
-				</div>
-			</div>
-		</div>
+    <div class="timelineItem">
+        <div class="lineContent" id="back2school">
+            <div class="lineDates">
+                Sept 2017 - Aug 2018
+            </div>
+            <div class="lineDescr">
+                <p>Decided to go back to school!</p>
+                <p>GRE prep and test.</p>
+                <p>MOOCs, personal projects, and travel.</p>
+            </div>
+        </div>
+    </div>
 
-		<div class="timelineItem">
-			<div class="lineContent" id="UW">
-				<h2>uw-madison</h2>
-				<div class="lineDates">
-					Jan 2017 - Sept 2017
-				</div>
-				<div class="lineDescr">
-					Attended CS classes at UW-Madison.
-				</div>
-			</div>
-		</div>
+    <div class="timelineItem">
+        <div class="lineContent" id="UW">
+            <h2>uw-madison</h2>
+            <div class="lineDates">
+                Jan 2017 - Sept 2017
+            </div>
+            <div class="lineDescr">
+                Attended CS classes at UW-Madison.
+            </div>
+        </div>
+    </div>
 
-		<div class="timelineItem">
-			<div class="lineContent" id="epic">
-				<h2>epic</h2>
-				<div class="lineDates">
-					Jan 2016 - Sept 2017
-				</div>
-				<div class="lineDescr">
-					<p>Provided technical support to Cleveland Clinic and HonorHealth.</p>
-					<p>Debugged code and worked closely with developers to improve.</p>
-					<p>Developed reports on both system and human health.</p>
-				</div>
-			</div>
-		</div>
+    <div class="timelineItem">
+        <div class="lineContent" id="epic">
+            <h2>epic</h2>
+            <div class="lineDates">
+                Jan 2016 - Sept 2017
+            </div>
+            <div class="lineDescr">
+                <p>Provided technical support to Cleveland Clinic and HonorHealth.</p>
+                <p>Debugged code and worked closely with developers to improve.</p>
+                <p>Developed reports on both system and human health.</p>
+            </div>
+        </div>
+    </div>
 
-		<div class="timelineItem">
-			<div class="lineContent" id="cwru">
-				<h2>miami</h2>
-				<div class="lineDates">
-					Aug 2011 - May 2015
-				</div>
-				<div class="lineDescr">
-					Bioengineering student studying 3D printed polymer properties.
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="timelineItem">
+        <div class="lineContent" id="cwru">
+            <h2>miami</h2>
+            <div class="lineDates">
+                Aug 2011 - May 2015
+            </div>
+            <div class="lineDescr">
+                Bioengineering student studying 3D printed polymer properties.
+            </div>
+        </div>
+    </div>
+</div>
 
-	<div class="container" id="projects" style="margin-top: 100px; text-align: center;">
-		<h1> Projects coming soon... </h1>
-	</div>
+<div class="container" id="projects" style="margin-top: 100px; text-align: center;">
+  <div class="custom-heading" id="pjs">
+      projects
+  </div>
+    <h1>ai / ml</h1>
+    <div class="row" style="margin-bottom:50px;">
+      <div class="col-md-6" id="dtrees">
+        <h3>decision trees</h3>
+        <img style="max-width:100%" src="decisionTree.gif" class="pimg"/>
+        <ul class="middle">
+          <li>id3 algorithm with cross-validation available</li>
+          <li>selectively grow to arbitrary depth</li>
+          <li>handles discrete and continuous variables</li>
+          <li>97% accuracy for voting dataset</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>reinforcement learning</h3>
+        <p>animations under construction...</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>sat solver</h3>
+        <p>animations under construction...</p>
+      </div>
+      <div class="col-md-6">
+        <h3>logistic regression</h3>
+        <p>animations under construction...</p>
+      </div>
+    </div>
 
-	<!-- Spacer -->
-	<div class="spacer" style="margin: 100px 0">
+    <h1 style="margin-top:150px;">computer graphics</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>clipping</h3>
+        <p>animations under construction...</p>
+      </div>
+      <div class="col-md-6">
+        <h3>ray tracing</h3>
+        <p>animations under construction...</p>
+      </div>
+    </div>
+</div>
 
-	</div>
+<!-- Spacer -->
+<div class="spacer" style="margin: 100px 0">
+
+</div>
 
 
-	<script src="particles.js"></script>
-	<script src="app.js"></script>
-	<script src="timeline.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="timeline.js"></script>
+<!-- <script src="portfolio_links.js"></script> -->
 
-	<script src="https://kit.fontawesome.com/01c5fee106.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/01c5fee106.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

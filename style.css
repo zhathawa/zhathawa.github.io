@@ -37,6 +37,35 @@ body {
   align-items: center;
 }
 
+.myDropdownContent {
+  display: none;
+}
+
+.myDropdownContent:hover {
+  display: block;
+}
+
+.myDropdownContent a {
+  color: white;
+  background-color: #313131;
+}
+
+/*
+#git:hover::after {
+  content: "This is a test!";
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+  position: absolute;
+  left: 45px;
+  top: 60px;
+  background-color: #313131;
+  width: 50%;
+  color: white;
+  font-variant: small-caps;
+}
+*/
+
 #particles-js {
   z-index: -1;
   position: absolute;
@@ -69,8 +98,27 @@ body {
   font-style: italic;
 }
 
+#dtrees:hover .pimg {
+  opacity:0.1;
+}
+
+#dtrees:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  opacity: 0;
+  transition: 0.5 ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
 .projects {
-  
+
 }
 
 @media screen and (min-width: 736px)
