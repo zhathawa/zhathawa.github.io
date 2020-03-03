@@ -1,3 +1,9 @@
+:root {
+  --maxRot: 0deg;
+  --xp: 0%;
+  --yp: 0%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -115,6 +121,17 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: left;
+}
+
+@-moz-keyframes rotatePaddle {
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: translate(var(--xp), var(--yp)) rotate(var(--maxRot));}
+}
+
+.paddleAnimate {
+  animation-name: rotatePaddle;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .projects {
