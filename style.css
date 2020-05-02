@@ -1,15 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:200,400,600');
+
 :root {
   --maxRot: 0deg;
   --xp: 0%;
   --yp: 0%;
+  --font-family-sans-serif: 'Source Sans Pro', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --gray-dark: #404040;
+  --purple: #533777;
+
+  /* Page Variables */
+  --light-blue: #e1f7f5;
+  --light-purple: #c290d2;
+  --font-family-serif: Merriweather, serif;
+  /* --color-text: var(--gray-dark); */
+  --color-text: #ffffff;
+  --font-family-text: var(--font-family-sans-serif);
+
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+canvas {
+  filter: blur(3px);
+  /* background: url("js/tex/potw1951a.jpg"); */
+}
+
+.family-sans {
+  font-family: var(--font-family-sans-serif);
+}
+
 body {
-  font-family: Helvetica, sans-serif;
+  /* font-family: Helvetica, sans-serif; */
+  font-family: var(--font-family-text);
+  color: var(--color-text);
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
 * {
@@ -31,6 +61,11 @@ body {
   opacity: 0.5;
 }
 
+#main-landing {
+  min-height: 100vh;
+  min-height: 100%;
+}
+
 .nav-item:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -41,6 +76,7 @@ body {
 
   display: flex;
   align-items: center;
+  margin-top: -5%;
 }
 
 .myDropdownContent {
@@ -56,21 +92,7 @@ body {
   background-color: #313131;
 }
 
-/*
-#git:hover::after {
-  content: "This is a test!";
-  width: 50px;
-  height: 50px;
-  padding: 10px 10px;
-  position: absolute;
-  left: 45px;
-  top: 60px;
-  background-color: #313131;
-  width: 50%;
-  color: white;
-  font-variant: small-caps;
-}
-*/
+
 
 #particles-js {
   z-index: -1;
@@ -81,11 +103,12 @@ body {
   background-size: cover
 }
 
-.custom-heading {
+.article-heading {
   width: 75%;
   font-size: 5em;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   text-align: center;
+  color: white;
 }
 
 .blur {
@@ -96,12 +119,20 @@ body {
   z-index: 4;
   position: fixed;
   top: 0;
-  filter: blur(20px);timeLink
+  filter: blur(20px);
 }
 
 .lineDates {
   margin-bottom: 10px;
   font-style: italic;
+}
+
+.page-section {
+  height: 100%;
+  height: 100vh;
+
+  margin: auto 0;
+  align-items: center;
 }
 
 #dtrees:hover .pimg {
@@ -136,6 +167,10 @@ body {
 
 .projects {
 
+}
+
+.classy {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 736px)

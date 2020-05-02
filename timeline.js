@@ -3,7 +3,7 @@
 
 /* Timeline Widget */
 const timeline = (function() {
-  let title = document.querySelector(".custom-heading");
+  let title = document.querySelector(".article-heading");
   let timelineItems = document.querySelectorAll(".timelineItem");
 
   (function() {
